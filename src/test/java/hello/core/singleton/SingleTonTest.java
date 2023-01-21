@@ -46,7 +46,6 @@ public class SingleTonTest {
     @DisplayName("스프링 컨테이너와 싱글톤")
     void springConaitner() {
 
-
         ApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
 
         MemberService memberService1 = ac.getBean("memberService",MemberService.class);
@@ -56,7 +55,6 @@ public class SingleTonTest {
         System.out.println("memberService2 = " + memberService2);
 
         assertThat(memberService1).isSameAs(memberService2);
-
 
     }
 }
