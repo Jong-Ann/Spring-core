@@ -45,3 +45,4 @@ this.memberRepository = memberRepository;}
 
 
 위에서 보면 MemberServiceImpl 생성자는 MemberRepository를 파라미터로 받고 그 값을 클래스의 멤버변수에 집어넣어준다. 즉 memberRepository 자리에 어떤 값이 들어오던 자유롭게 바꿀 수 있다는 뜻이다.
+
